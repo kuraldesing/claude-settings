@@ -16,6 +16,7 @@ The MCP (Model Context Protocol) configuration lives in [`.mcp.json`](./.mcp.jso
 Custom Claude Code commands that make life easier, stored in [`.claude/commands/`](./.claude/commands/):
 
 - [`commit.md`](./.claude/commands/commit.md) - Automated commit creation with conventional commit messages
+- [`pr-summary.md`](./.claude/commands/pr-summary.md) - Generate PR summaries from git history and changes
 
 ## Extra Resources
 
