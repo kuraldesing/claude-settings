@@ -14,7 +14,7 @@ Update PR message with automatically generated summary with concise bullet point
 1. **Tool Selection**: Uses GitHub MCP tool (if available) or falls back to `gh` command
 2. **Analysis**: Fetches PR details, retrieves diff, analyzes important changes
 3. **Summary**: Generates concise bullet points with code references
-4. **Update**: Updates PR description with summary section using GitHub MCP or `gh` command
+4. **Update/Edit**: Always edit the PR description** with generated summary using `mcp__github__update_pull_request` (or `gh pr edit` if MCP unavailable). Never skip this step.
 
 ## Examples
 
