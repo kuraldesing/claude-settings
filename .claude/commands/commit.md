@@ -17,15 +17,22 @@ Automated commit creation with conventional commit messages.
    ```
 
 2. **Staging Check**:
-   - Runs `git status` to check staged files
-   - **Stops if 0 files staged** - stage files first with `git add`
+   - Check which files are staged with `git diff --cached --name-only`
+   - **Stops if 0 files staged** - guides user to stage files first
 
-3. **Diff Analysis**:
+3. **README Context & Validation**:
+   - Reads README.md to understand project context
+   - Uses project description to generate more accurate commit messages
+   - Checks if README needs updates
+   - Suggests minor updates if documentation is outdated
+
+4. **Diff Analysis**:
    - Performs `git diff --cached` on staged changes
    - Analyzes for logical separation opportunities
    - Suggests commit splits if multiple concerns detected
+   - Incorporates README context for better commit descriptions
 
-4. **Commit Creation**:
+5. **Commit Creation**:
    - Generates conventional commit message(s)
    - Executes commit(s) based on analysis
 
