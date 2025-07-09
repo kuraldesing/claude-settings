@@ -16,3 +16,9 @@ The MCP (Model Context Protocol) configuration lives in [`.mcp.json`](./.mcp.jso
 Custom Claude Code commands that make life easier, stored in [`.claude/commands/`](./.claude/commands/):
 
 - [`commit.md`](./.claude/commands/commit.md) - Automated commit creation with conventional commit messages
+
+## Extra Resources
+
+- [Claude MCP Server Setup](https://docs.anthropic.com/en/docs/claude-code/mcp#project-scope)
+
+- [Claude Code Commands Setup](https://docs.anthropic.com/en/docs/claude-code/slash-commands#command-types)
