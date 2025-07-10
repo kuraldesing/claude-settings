@@ -6,10 +6,11 @@ My personal Claude [Code](https://github.com/anthropics/claude-code)/[Desktop](h
 
 The MCP (Model Context Protocol) configuration lives in [`.mcp.json`](./.mcp.json). These are some solid MCP server repos worth checking out:
 
-- [Slack MCP Server](https://github.com/ubie-oss/slack-mcp-server) - 10+ Slack commands
-- [GitHub MCP Server](https://github.com/github/github-mcp-server) - 50+ GitHub commands
+- [Slack MCP Server](https://github.com/ubie-oss/slack-mcp-server) - 10+ Slack tools
+- [GitHub MCP Server](https://github.com/github/github-mcp-server) - 50+ GitHub tools
 - [Context7](https://github.com/upstash/context7) - Up-to-date documentation context for 20K+ libraries
-- [Azure MCP](https://github.com/Azure/azure-mcp) - 40+ Azure commands
+- [Azure MCP](https://github.com/Azure/azure-mcp) - 40+ Azure tools
+- [Playwright MCP](https://github.com/microsoft/playwright-mcp) - 30+ browser/web testing tools
 
 ## Commands
 
