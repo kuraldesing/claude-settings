@@ -19,12 +19,14 @@ Automated commit creation with conventional commit messages.
 2. **Staging Check**:
    - Check which files are staged with `git diff --cached --name-only`
    - **Stops if 0 files staged** - guides user to stage files first
+   - Never stage already staged files
 
 3. **README Context & Validation**:
    - Reads README.md to understand project context
    - Uses project description to generate more accurate commit messages
-   - Checks if README needs updates
-   - Suggests minor updates if documentation is outdated
+   - Always check if README needs updates when adding new features
+   - When adding new MCP servers or commands, suggest README updates
+   - Propose documentation updates as separate commits after main changes
 
 4. **Diff Analysis**:
    - Performs `git diff --cached` on staged changes
@@ -108,6 +110,13 @@ refactor: restructure package for cleaner imports
 ## Options
 
 - `--lint`: Enable ruff style checks and formatting before committing
+
+## Important Behaviors
+
+- **Documentation Check**: When adding new features (MCP servers, commands, etc.), always check if README or other docs need updates
+- **Staging**: NEVER use `git add` on already staged files - only check what's staged with `git diff --cached --name-only`
+- **Split Strategy**: Suggest documentation updates as separate commits after feature commits
+- **Context Awareness**: Cross-reference changes with README.md to ensure documentation stays in sync
 
 ## Notes
 
